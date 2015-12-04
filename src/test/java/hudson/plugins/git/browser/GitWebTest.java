@@ -42,7 +42,7 @@ public class GitWebTest {
     @Test
     public void testGetChangeSetLinkGitChangeSet() throws IOException, SAXException {
         final URL changeSetLink = gitwebWeb.getChangeSetLink(createChangeSet("rawchangelog"));
-        assertEquals(GITWEB_URL + "&a=commit&h=396fc230a3db05c427737aa5c2eb7856ba72b05d", changeSetLink.toString());
+        assertEquals(GITWEB_URL + "&a=commitdiff&h=396fc230a3db05c427737aa5c2eb7856ba72b05d", changeSetLink.toString());
     }
 
     /**
